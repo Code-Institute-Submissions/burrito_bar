@@ -1,0 +1,36 @@
+<div>
+<div id="floatingCirclesG" ng-show="loading">
+    <div class="f_circleG" id="frotateG_01"></div>
+    <div class="f_circleG" id="frotateG_02"></div>
+    <div class="f_circleG" id="frotateG_03"></div>
+    <div class="f_circleG" id="frotateG_04"></div>
+    <div class="f_circleG" id="frotateG_05"></div>
+    <div class="f_circleG" id="frotateG_06"></div>
+    <div class="f_circleG" id="frotateG_07"></div>
+    <div class="f_circleG" id="frotateG_08"></div>
+</div>
+<div class="center" ng-show="loading"><p>Loading...</p></div>
+    <div class="container" ng-show="showing">
+        <header class="login">
+        <span>Register</span>
+        </header>
+        <div class="row2">
+            <div class="col-sm-6">
+                <form name="registrationForm" ng-submit="submitForm()" novalidate>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="username" class="form-control register" ng-model="user.username" required>
+                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your username is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control register" ng-model="user.password" required>
+                        <p ng-show="registrationForm.password.$pristine" class="help-block">Your password is required</p>
+                    </div>
+ 
+                    <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

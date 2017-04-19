@@ -1,0 +1,74 @@
+<div>
+    <div class="container">
+	   <header class="login"><span>Book a table</span></header>
+        <div class="row">
+            <div class="col-sm-6">
+                <form name="bookingForm" ng-submit="submit(bookingForm)" novalidate>
+                    <div class="form-group">
+                        <label class="control-label">First name</label>
+                        <input ng-model="firstname" type="text" name="firstname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Surname</label>
+                        <input type="text" ng-model="surname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <input type="email" ng-model="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">No. of guests</label>
+                        <select ng-model="guests" form="bookingForm" class="form-control" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Date</label>
+                        <input type="text" placeholder="dd/mm/yy" ng-model="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Time</label>
+                        <select ng-model="time" form="bookingForm" class="form-control" required>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                        </select>
+                    </div>
+                        <button type="submit" data-toggle="modal" href="book/#myModal" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+    
+    <div id="myModal" class="modal fade in">
+        <div class="modal-dialog">
+            <div class="modal-content">
+ 
+                <div class="modal-header">
+                    <h4 class="modal-title">{{heading}}</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>{{message}}</h4>
+                    <p>{{message2}}</p>
+                    <p>{{g}}</p>
+                    <p>{{t}}<br>{{d}}</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                    <a class="{{modal}}" data-dismiss="modal"><span>{{modal_message}}</span></a>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

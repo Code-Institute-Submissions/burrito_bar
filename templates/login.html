@@ -1,0 +1,26 @@
+<div>
+    <div class="container">
+    	<header class="login">
+        <span>Log in</span>
+        </header>
+        <div class="row2">
+            <div class="col-sm-6">
+                <form name="loginForm" ng-submit="submitForm()" novalidate>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="name" class="form-control register" ng-model="user.username" required>
+                        <p ng-show="loginForm.name.$pristine" class="help-block">Your username is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control register" ng-model="user.password" required>
+                        <p ng-show="loginForm.password.$pristine" class="help-block">Your password is required</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Submit</button>
+                    &nbsp;<a class="registerLink" href="#/register">Register</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
