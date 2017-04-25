@@ -10,4 +10,4 @@ that is compatible with any device.
 
 I believe that this project fully satisfies the project guidelines, it particularly demonstrates use of HTML form validation, services, directives and angular routing.
 
-The site is hosted live (for demonstration only) at https://burrito-bar-7b5ea.firebaseapp.com/
+The site is hosted live (for demonstration only) at: https://burrito-bar-7b5ea.firebaseapp.com/
