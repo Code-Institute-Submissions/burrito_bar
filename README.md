@@ -3,7 +3,7 @@
 ## Overview
 
 The Burrito Bar app is my project for stream one of the code institute full stack developer program. 
-Burrito Bar is a ficticious, mexican themed restaurant, created using the angularJS framework. Prospective users, can browse menus, make reservations online & even register for access to discounted prices.
+Burrito Bar is a mexican themed restaurant website, created using the angularJS framework. Prospective users, can browse menus, make reservations online & even register for access to discounted prices.
 
 ## Project requirements/ guidelines
 
